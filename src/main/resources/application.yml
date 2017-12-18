@@ -1,0 +1,37 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  social:
+    facebook:
+      app-id: 364796100288525
+      app-secret: 154cf2a54926709921253d8df6aacfa2
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:blog
+  jackson:
+    date-format: yyyy-MM-dd'T'HH:mm:ss.SSSXXX
+    time-zone: Europe/Istanbul
+logging:
+ level:
+  com.springblog: TRACE
+  org.springframework: INFO
+  org.hibernate: INFO
+  org.h2: INFO
+  
+server:
+  error:
+    whitelabel:
+      enabled: false
+  
+    
+      
+      
